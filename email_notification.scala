@@ -4,7 +4,7 @@ import javax.mail.internet.{InternetAddress, MimeBodyPart, MimeMessage, MimeMult
 
 
  var Email_host:String = "smtp.gmail.com"
-  var Email_port :String= "587"
+  var Email_port :String= "25"
   var Email_username :String= "mallem.santhosh@gmail.com"
   var Email_password :String= "ohippvtbzbuzfcjr"
   var Email_recipient:String="ramsai350mg@gmail.com,mallem.santhosh@gmail.com,santhosh.mallem@modak.com"
@@ -12,7 +12,7 @@ import javax.mail.internet.{InternetAddress, MimeBodyPart, MimeMessage, MimeMult
   var Message_Body:String ="Hello Hai This is Testing Related Message"
 
 // props.put("mail.smtp.auth", "true");
-//     props.put("mail.smtp.starttls.enable", "true");
+//     props.put("mail.smtp.starttls.enable", "true"); 587
 //     props.put("mail.smtp.host", "smtp.gmail.com");
 //     props.put("mail.smtp.port", "465");
 //     props.put("mail.smtp.ssl.protocols", "TLSv1.2");
