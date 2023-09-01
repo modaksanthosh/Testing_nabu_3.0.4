@@ -4,7 +4,7 @@ import javax.mail.internet.{InternetAddress, MimeBodyPart, MimeMessage, MimeMult
 
 
  var Email_host:String = "smtp.gmail.com"
-  var Email_port :String= "465"
+  var Email_port :String= "587"
   var Email_username :String= "mallem.santhosh@gmail.com"
   var Email_password :String= "ohippvtbzbuzfcjr"
   var Email_recipient:String="ramsai350mg@gmail.com,mallem.santhosh@gmail.com,santhosh.mallem@modak.com"
