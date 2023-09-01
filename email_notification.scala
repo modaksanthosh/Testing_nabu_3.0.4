@@ -34,6 +34,7 @@ transport.sendMessage(message, message.getAllRecipients)
 
 }
 
+{
  var Email_host:String = "smtp.gmail.com"
   var Email_port :String= "587"
   var Email_username :String= "mallem.santhosh@gmail.com"
@@ -44,3 +45,4 @@ transport.sendMessage(message, message.getAllRecipients)
 
 
 main_Notification(Email_port:String,Email_recipient:String,Subject:String,Message_Body:String,Email_host:String, Email_username:String, Email_password:String)
+}
