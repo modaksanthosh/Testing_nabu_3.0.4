@@ -2,7 +2,7 @@ import java.util.{Calendar, Properties}
 import javax.mail.{Message, Session}
 import javax.mail.internet.{InternetAddress, MimeBodyPart, MimeMessage, MimeMultipart}
 
-{
+
  var Email_host:String = "smtp.gmail.com"
   var Email_port :String= "465"
   var Email_username :String= "mallem.santhosh@gmail.com"
@@ -49,5 +49,5 @@ val transport = session.getTransport("smtp")
 transport.connect(Email_host, Email_username, Email_password)
 transport.sendMessage(message, message.getAllRecipients)
 
-}
+
 
