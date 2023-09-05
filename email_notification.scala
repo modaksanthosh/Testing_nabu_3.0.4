@@ -1,3 +1,6 @@
+println("Hello World")
+
+
 var from="mallem.santhosh@gmail.com";
 var password="ohippvtbzbuzfcjr";
 var sub="scala smtp mail sending";
