@@ -24,19 +24,9 @@ val session = Session.getInstance(props,
         }
       })
 
-try{
-    var message = new MimeMessage(session);
+   var message = new MimeMessage(session);
         message.addRecipient(Message.RecipientType.TO,new InternetAddress("santhosh.mallem@modak.com"));
-        message.setSubject(sub);
-        message.setText(mail_Body);
+        message.setSubject("Hello");
+        message.setText("Santhosh");
         Transport.send(message);
         println("message sent successfully");
-}
-match{
-    case Success(s) => {
-        println("mail sent")
-  }
-    case Failure(f) => {
-        println(f)
-  }
-}
