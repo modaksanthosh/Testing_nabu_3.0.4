@@ -1,8 +1,8 @@
 var from="mallem.santhosh@gmail.com";
 var password="ohippvtbzbuzfcjr";
 var sub="scala smtp mail sending";
-var msg = "Database Name : "
-`var mail_Body= "Test Message"
+var msg = "Database Name : ";
+var mail_Body= "Test Message";
 
 var props = new Properties();
     props.put("mail.smtp.host", "mailhost.modak.com");
@@ -20,7 +20,7 @@ val authenticator = new Authenticator() {
 val session = Session.getDefaultInstance(props, authenticator)
 Try{
     var message = new MimeMessage(session);
-        message.addRecipient(Message.RecipientType.TO,new InternetAddress(to));
+        message.addRecipient(Message.RecipientType.TO,new InternetAddress("santhosh.mallem@modak.com"));
         message.setSubject(sub);
         message.setText(mail_Body);
         Transport.send(message);
