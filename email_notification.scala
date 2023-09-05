@@ -1,6 +1,6 @@
 println("Hello World")
 import java.util.{Properties}
-import javax.mail.{Message, Session}
+import javax.mail.{Message, Session, Authenticator}
 import javax.mail.internet.{InternetAddress,MimeMessage}
 
 
