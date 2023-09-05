@@ -1,4 +1,7 @@
 println("Hello World")
+import java.util.{Properties}
+import javax.mail.{Message, Session}
+import javax.mail.internet.{InternetAddress,MimeMessage}
 
 
 var from="mallem.santhosh@gmail.com";
