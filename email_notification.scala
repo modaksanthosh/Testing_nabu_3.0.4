@@ -24,7 +24,7 @@ val session = Session.getInstance(props,
         }
       })
 
-Try{
+try{
     var message = new MimeMessage(session);
         message.addRecipient(Message.RecipientType.TO,new InternetAddress("santhosh.mallem@modak.com"));
         message.setSubject(sub);
