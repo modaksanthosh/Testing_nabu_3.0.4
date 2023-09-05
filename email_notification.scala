@@ -24,20 +24,19 @@ val session = Session.getInstance(props,
         }
       })
 
-    try {
-      // Create a message
-      val message = new MimeMessage(session)
-      message.setFrom(from)
-      message.setRecipient(Message.RecipientType.TO, to)
-      message.setSubject("Hello, Scala Email!")
-      message.setText("This is a test email sent from Scala.")
-
-      // Send the message
-      Transport.send(message)
-
-      println("Email sent successfully!")
-    } catch {
-      case e: MessagingException =>
-        e.printStackTrace()
-        println("Email could not be sent.")
-    }
+Try{
+    var message = new MimeMessage(session);
+        message.addRecipient(Message.RecipientType.TO,new InternetAddress("santhosh.mallem@modak.com"));
+        message.setSubject(sub);
+        message.setText(mail_Body);
+        Transport.send(message);
+        println("message sent successfully");
+}
+match{
+    case Success(s) => {
+        println("mail sent")
+  }
+    case Failure(f) => {
+        println(f)
+  }
+}
